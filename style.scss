@@ -1,0 +1,143 @@
+// CSS RESET
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// Colour Palette
+
+$dark-green: #164A41;
+$medium-green: #4D774E;
+$light-green: #9DC88D;
+$natural-yellow: #F1B24A;
+$white: #FFFFFF;
+$opaque-black: rgba(0, 0, 0, 0.25);
+
+// Custom SCSS
+
+body {
+	box-sizing: border-box;
+	height: 100vh;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+    .page-one {
+		height: 100vh;
+		width: 100%;
+        background: url('./img/Website\ BG.png');
+		.navbar {
+			box-sizing: border-box;
+			padding: 1% 1%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			h1 {
+				text-transform: uppercase;
+				font-weight: bold;
+				color: $white;
+				font-size: 2.5em;
+			}
+			.links {
+				width: 32.5%;
+				a {
+					text-decoration: none;
+					font-weight: bold;
+					text-transform: uppercase;
+					font-size: 1.75em;
+					padding: 2.5% 5%;
+					color: black;
+					border-radius: 10px;
+					transition: all 300ms ease;
+				}
+				a:hover {
+					background-color: $opaque-black;
+				}
+			}
+		}
+		.info {
+			width: 50%;
+			position: absolute;
+			top: 25%;
+			left: 1%;
+			.main-info {
+				text-align: center;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 13em;
+				font-weight: bold;
+				span {
+					color: $natural-yellow;
+				}
+			}
+		}
+		.small-info {
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 25%;
+			height: 45%;
+			position: absolute;
+			top: 10%;
+			right: 2.5%;
+			color: $natural-yellow;
+			font-size: 3.5em;
+			background-color: rgba(0,0,0,0.75);
+			border-radius: 50%;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 5% 5%;
+		}
+		.socials {
+			background-color: rgba(0,0,0,0.75);
+			height: 75px;
+			width: 75px;
+			border-radius: 50%;
+			position: fixed;
+			bottom: 1%;
+			left: 1%;
+		}
+		.socials:hover {
+			cursor: pointer;
+		}
+    }
+}
