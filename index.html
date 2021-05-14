@@ -10,13 +10,18 @@
     <title>Samuel James Forrest - Web Development</title>
 </head>
 <body>
-    <div class="page-one">
+    <div class="page-one" id="#page-one">
         <nav class="navbar">
             <h1>Samuel James Forrest</h1>
+            <div class="burger-button">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+                <div class="line-three"></div>
+            </div>
             <div class="links">
-                <a href="#">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a class="home-link" href="#page-one">Home</a>
+                <a class="project-link" href="#page-two">Projects</a>
+                <a class="contact-link" href="#page-three">Contact</a>
             </div>
         </nav>
         <section class="info">
@@ -34,6 +39,24 @@
                 <img class="twitter" src="./img/github.svg" alt="">
             </a>
         </div>
+    </div>
+    <div class="page-two" id="page-two">
+        <h2>Projects</h2>
+        <div class="card-container">
+            <div class="card-row">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+            <div class="card-row">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+    </div>
+    <div class="page-three" id="page-three">
+
     </div>
 
     <script src="app.js"></script>
