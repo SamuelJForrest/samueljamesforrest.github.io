@@ -58,6 +58,8 @@ body {
   height: 100vh;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 body .page-one {
@@ -174,7 +176,7 @@ body .page-one .info .main-info {
   text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 13em;
+  font-size: 12em;
   font-weight: bold;
 }
 
@@ -199,7 +201,7 @@ body .page-one .small-info {
   top: 10%;
   right: 2.5%;
   color: #F1B24A;
-  font-size: 4.5em;
+  font-size: 4em;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 50%;
   font-weight: bold;
@@ -299,7 +301,7 @@ body .page-two h2 {
   margin-bottom: 2.5%;
 }
 
-body .page-two .card-container {
+body .page-two .project-container {
   border-radius: 25px;
   margin: 0 auto;
   width: 85%;
@@ -308,31 +310,153 @@ body .page-two .card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body .page-two .card-container .card-row {
-  width: 90%;
-  height: 75%;
-  margin: 1.5% auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-body .page-two .card-container .card-row .card {
+body .page-two .project-container .prev-btn {
+  height: 7.5%;
+  width: 3.75%;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5em;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  left: 2.5%;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+body .page-two .project-container .next-btn {
+  height: 7.5%;
+  width: 3.75%;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5em;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  right: 2.5%;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+body .page-two .project-container .prev-btn:hover, body .page-two .project-container .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+body .page-two .project-container .project-image {
+  background: url(./img/xps-8pb7Hq539Zw-unsplash.jpg);
+  background-size: cover;
+  width: 70%;
   height: 100%;
-  width: 20%;
+  border-radius: 25px 0 0 25px;
+}
+
+body .page-two .project-container .project-info {
   background-color: rgba(0, 0, 0, 0.25);
+  width: 30%;
+  height: 100%;
+  border-radius: 0 25px 25px 0;
+}
+
+body .page-two .project-container .project-info .project-name {
+  width: 90%;
+  text-align: center;
+  margin: 5% auto 2.5% auto;
+  padding: 5% 2%;
   border-radius: 25px;
+  font-size: 3em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #F1B24A;
+}
+
+body .page-two .project-container .project-info .project-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 2.5% auto;
+  padding: .5% 2%;
+  width: 90%;
+  height: 45%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.25em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+body .page-two .project-container .project-info .project-tech {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  height: 15%;
+  margin: 0 auto 5% auto;
+  border-radius: 25px;
+  padding: 2.5% 2%;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .page-two .project-container .project-info .project-tech p {
+  color: white;
+  margin-bottom: 2.5%;
+}
+
+body .page-two .project-container .project-info .project-buttons {
+  width: 80%;
+  height: 10%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .page-two .project-container .project-info .project-buttons .view-live, body .page-two .project-container .project-info .project-buttons .view-git {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 75%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: inherit;
+  margin: 0 2.5%;
+  border-radius: 15px;
+  border: 2px solid white;
+  padding: 10px 25px;
+  font-size: 1.1em;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+body .page-two .project-container .project-info .project-buttons .view-live:hover, body .page-two .project-container .project-info .project-buttons .view-git:hover {
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #F1B24A;
+  cursor: pointer;
 }
 
 body .page-three {
@@ -562,26 +686,32 @@ body .page-three {
             animation-duration: 500ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.44, 1.37);
+            animation-timing-function: cubic-bezier(0.17, 0.67, 0.44, 1.37);
     -webkit-transform: translateX(-110%);
             transform: translateX(-110%);
   }
   body .page-one .navbar .links .project-link {
     -webkit-animation-name: linkSlider;
             animation-name: linkSlider;
-    -webkit-animation-duration: 700ms;
-            animation-duration: 700ms;
+    -webkit-animation-duration: 650ms;
+            animation-duration: 650ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.44, 1.37);
+            animation-timing-function: cubic-bezier(0.17, 0.67, 0.44, 1.37);
     -webkit-transform: translateX(-110%);
             transform: translateX(-110%);
   }
   body .page-one .navbar .links .contact-link {
     -webkit-animation-name: linkSlider;
             animation-name: linkSlider;
-    -webkit-animation-duration: 900ms;
-            animation-duration: 900ms;
+    -webkit-animation-duration: 800ms;
+            animation-duration: 800ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.44, 1.37);
+            animation-timing-function: cubic-bezier(0.17, 0.67, 0.44, 1.37);
     -webkit-transform: translateX(-110%);
             transform: translateX(-110%);
   }

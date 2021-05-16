@@ -64,6 +64,7 @@ body {
 	height: 100vh;
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
+	backface-visibility: hidden;
     .page-one {
 		height: 100vh;
 		width: 100%;
@@ -136,7 +137,7 @@ body {
 				text-align: center;
 				color: $white;
 				text-transform: uppercase;
-				font-size: 13em;
+				font-size: 12em;
 				font-weight: bold;
 				span {
 					color: $natural-yellow;
@@ -154,7 +155,7 @@ body {
 			top: 10%;
 			right: 2.5%;
 			color: $natural-yellow;
-			font-size: 4.5em;
+			font-size: 4em;
 			background-color: rgba(0,0,0,0.75);
 			border-radius: 50%;
 			font-weight: bold;
@@ -216,8 +217,6 @@ body {
 		background: linear-gradient(60deg, $dark-green, $medium-green);
 		width: 100%;
 		height: 100vh;
-		// border-top: 5px solid red;
-		// border-bottom: 5px solid red;
 		h2 {
 			width: 50%;
 			color: white;
@@ -227,26 +226,124 @@ body {
 			padding: 1% 0 0 1%;
 			margin-bottom: 2.5%;
 		}
-		.card-container {
+		.project-container {
 			border-radius: 25px;
 			margin: 0 auto;
 			width: 85%;
 			height: 80%;
 			background-color: $opaque-black;
 			display: flex;
-			flex-direction: column;
-			.card-row {
-				width: 90%;
-				height: 75%;
-				margin: 1.5% auto;
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
-				.card {
-					height: 100%;
-					width: 20%;
-					background-color: $opaque-black;
+			align-items: center;
+			.prev-btn {
+				height: 7.5%;
+				width: 3.75%;
+				background-color: transparent;
+				color: white;
+				font-weight: bold;
+				font-size: 2.5em;
+				border: 3px solid white;
+				border-radius: 50%;
+				position: absolute;
+				left: 2.5%;
+				transition: all 500ms ease;
+			}
+			.next-btn {
+				height: 7.5%;
+				width: 3.75%;
+				background-color: transparent;
+				color: white;
+				font-weight: bold;
+				font-size: 2.5em;
+				border: 3px solid white;
+				border-radius: 50%;
+				position: absolute;
+				right: 2.5%;
+				transition: all 500ms ease;
+			}
+			.prev-btn:hover, .next-btn:hover {
+				background-color: rgba(0,0,0,0.75);
+				cursor: pointer;
+			}
+			.project-image {
+				background: url(./img/xps-8pb7Hq539Zw-unsplash.jpg);
+				background-size: cover;
+				width: 70%;
+				height: 100%;
+				border-radius: 25px 0 0 25px;
+			}
+			.project-info {
+				background-color: $opaque-black;
+				width: 30%;
+				height: 100%;
+				border-radius: 0 25px 25px 0;
+				.project-name {
+					width: 90%;
+					text-align: center;
+					margin: 5% auto 2.5% auto;
+					padding: 5% 2%;
 					border-radius: 25px;
+					font-size: 3em;
+					background-color: rgba(0,0,0,0.5);
+					color: $natural-yellow;
+				}
+				.project-description {
+					display: flex;
+					align-items: center;
+					margin: 0 auto 2.5% auto;
+					padding: .5% 2%;
+					width: 90%;
+					height: 45%;
+					color: $white;
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: 1.25em;
+					background-color: rgba(0,0,0,0.5);
+					border-radius: 25px;
+				}
+				.project-tech {
+					background-color: rgba(0,0,0,0.5);
+					width: 90%;
+					height: 15%;
+					margin: 0 auto 5% auto;
+					border-radius: 25px;
+					padding: 2.5% 2%;
+					font-weight: bold;
+					font-size: 1.5em;
+					text-transform: uppercase;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					p {
+						color: white;
+						margin-bottom: 2.5%;
+					}
+				}
+				.project-buttons {
+					width: 80%;
+					height: 10%;
+					margin: 0 auto;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					.view-live, .view-git{
+						background-color: rgba(0, 0, 0, 0.5);
+						color: white;
+						height: 75%;
+						font-weight: bold;
+						text-transform: uppercase;
+						font-family: inherit;
+						margin: 0 2.5%;
+						border-radius: 15px;
+						border: 2px solid white;
+						padding: 10px 25px;
+						font-size: 1.1em;
+						transition: all 300ms ease;
+					}
+					.view-live:hover, .view-git:hover{
+						background-color: rgba(0,0,0,0.95);
+						color: $natural-yellow;
+						cursor: pointer;
+					}
 				}
 			}
 		}
@@ -404,18 +501,21 @@ body {
 						animation-name: linkSlider;
 						animation-duration: 500ms;
 						animation-fill-mode: forwards;
+						animation-timing-function: cubic-bezier(.17,.67,.44,1.37);
 						transform: translateX(-110%);
 					}
 					.project-link {
 						animation-name: linkSlider;
-						animation-duration: 700ms;
+						animation-duration: 650ms;
 						animation-fill-mode: forwards;
+						animation-timing-function: cubic-bezier(.17,.67,.44,1.37);
 						transform: translateX(-110%);
 					}
 					.contact-link {
 						animation-name: linkSlider;
-						animation-duration: 900ms;
+						animation-duration: 800ms;
 						animation-fill-mode: forwards;
+						animation-timing-function: cubic-bezier(.17,.67,.44,1.37);
 						transform: translateX(-110%);				
 					}
 					@keyframes linkSlider {
