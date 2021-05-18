@@ -277,10 +277,11 @@ body {
 				height: 100%;
 				border-radius: 0 25px 25px 0;
 				.project-name {
-					width: 90%;
+					width: 80%;
+					height: 12.5%;
 					text-align: center;
 					margin: 5% auto 2.5% auto;
-					padding: 5% 2%;
+					padding: 2%;
 					border-radius: 25px;
 					font-size: 3em;
 					background-color: rgba(0,0,0,0.5);
@@ -291,18 +292,18 @@ body {
 					align-items: center;
 					margin: 0 auto 2.5% auto;
 					padding: .5% 2%;
-					width: 90%;
-					height: 45%;
+					width: 80%;
+					height: 42.5%;
 					color: $white;
 					text-transform: uppercase;
 					font-weight: bold;
-					font-size: 1.25em;
+					font-size: 1.15em;
 					background-color: rgba(0,0,0,0.5);
 					border-radius: 25px;
 				}
 				.project-tech {
 					background-color: rgba(0,0,0,0.5);
-					width: 90%;
+					width: 80%;
 					height: 15%;
 					margin: 0 auto 5% auto;
 					border-radius: 25px;

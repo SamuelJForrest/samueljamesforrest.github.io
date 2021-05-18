@@ -28,3 +28,16 @@ burgerButton.addEventListener('click', () => {
     lineThree.classList.toggle('line-three-rotate');
 });
 
+// Projects object
+
+const projects = [
+    {
+        name: '',
+        description: '',
+        languages: '',
+        image: '',
+        sitelink: '',
+        gitlink: ''
+    }
+];
+
