@@ -287,7 +287,6 @@ body .page-one .slide-up {
 
 body .page-two {
   background: linear-gradient(60deg, #164A41, #4D774E);
-  width: 100%;
   height: 100vh;
 }
 
@@ -301,7 +300,76 @@ body .page-two h2 {
   margin-bottom: 2.5%;
 }
 
-body .page-two .project-container {
+body .page-two .container {
+  height: 85%;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .page-two .container .about-me-info {
+  width: 55%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .page-two .container .about-me-info span {
+  color: #F1B24A;
+}
+
+body .page-two .container .about-me-info p {
+  width: 90%;
+  font-size: 3.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 2% 0;
+}
+
+body .page-two .container .picture-and-contact {
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+body .page-three {
+  background: linear-gradient(120deg, #164A41, #4D774E);
+  width: 100%;
+  height: 100vh;
+}
+
+body .page-three h2 {
+  width: 50%;
+  color: white;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1% 0 0 1%;
+  margin-bottom: 2.5%;
+}
+
+body .page-three .project-container {
   border-radius: 25px;
   margin: 0 auto;
   width: 85%;
@@ -315,7 +383,7 @@ body .page-two .project-container {
           align-items: center;
 }
 
-body .page-two .project-container .prev-btn {
+body .page-three .project-container .prev-btn {
   height: 7.5%;
   width: 3.75%;
   background-color: transparent;
@@ -330,7 +398,7 @@ body .page-two .project-container .prev-btn {
   transition: all 500ms ease;
 }
 
-body .page-two .project-container .next-btn {
+body .page-three .project-container .next-btn {
   height: 7.5%;
   width: 3.75%;
   background-color: transparent;
@@ -345,12 +413,12 @@ body .page-two .project-container .next-btn {
   transition: all 500ms ease;
 }
 
-body .page-two .project-container .prev-btn:hover, body .page-two .project-container .next-btn:hover {
+body .page-three .project-container .prev-btn:hover, body .page-three .project-container .next-btn:hover {
   background-color: rgba(0, 0, 0, 0.75);
   cursor: pointer;
 }
 
-body .page-two .project-container .project-image {
+body .page-three .project-container .project-image {
   background: url(./img/xps-8pb7Hq539Zw-unsplash.jpg);
   background-size: cover;
   width: 70%;
@@ -358,14 +426,14 @@ body .page-two .project-container .project-image {
   border-radius: 25px 0 0 25px;
 }
 
-body .page-two .project-container .project-info {
+body .page-three .project-container .project-info {
   background-color: rgba(0, 0, 0, 0.25);
   width: 30%;
   height: 100%;
   border-radius: 0 25px 25px 0;
 }
 
-body .page-two .project-container .project-info .project-name {
+body .page-three .project-container .project-info .project-name {
   width: 80%;
   height: 12.5%;
   text-align: center;
@@ -377,7 +445,7 @@ body .page-two .project-container .project-info .project-name {
   color: #F1B24A;
 }
 
-body .page-two .project-container .project-info .project-description {
+body .page-three .project-container .project-info .project-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,7 +464,7 @@ body .page-two .project-container .project-info .project-description {
   border-radius: 25px;
 }
 
-body .page-two .project-container .project-info .project-tech {
+body .page-three .project-container .project-info .project-tech {
   background-color: rgba(0, 0, 0, 0.5);
   width: 80%;
   height: 15%;
@@ -418,12 +486,12 @@ body .page-two .project-container .project-info .project-tech {
           align-items: flex-start;
 }
 
-body .page-two .project-container .project-info .project-tech p {
+body .page-three .project-container .project-info .project-tech p {
   color: white;
   margin-bottom: 2.5%;
 }
 
-body .page-two .project-container .project-info .project-buttons {
+body .page-three .project-container .project-info .project-buttons {
   width: 80%;
   height: 10%;
   margin: 0 auto;
@@ -438,7 +506,7 @@ body .page-two .project-container .project-info .project-buttons {
           align-items: center;
 }
 
-body .page-two .project-container .project-info .project-buttons .view-live, body .page-two .project-container .project-info .project-buttons .view-git {
+body .page-three .project-container .project-info .project-buttons .view-live, body .page-three .project-container .project-info .project-buttons .view-git {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   height: 75%;
@@ -454,15 +522,14 @@ body .page-two .project-container .project-info .project-buttons .view-live, bod
   transition: all 300ms ease;
 }
 
-body .page-two .project-container .project-info .project-buttons .view-live:hover, body .page-two .project-container .project-info .project-buttons .view-git:hover {
+body .page-three .project-container .project-info .project-buttons .view-live:hover, body .page-three .project-container .project-info .project-buttons .view-git:hover {
   background-color: rgba(0, 0, 0, 0.95);
   color: #F1B24A;
   cursor: pointer;
 }
 
-body .page-three {
-  background: linear-gradient(120deg, #164A41, #4D774E);
-  height: 100vh;
+body .page-three .mobile-projects {
+  display: none;
 }
 
 @-webkit-keyframes floating {
@@ -828,7 +895,7 @@ body .page-three {
   body .page-two {
     background: linear-gradient(60deg, #164A41, #4D774E);
     width: 100%;
-    height: 100vh;
+    height: 200vh;
   }
   body .page-two h2 {
     width: 50%;
@@ -837,47 +904,49 @@ body .page-three {
     text-transform: uppercase;
     font-weight: bold;
     padding: 1% 0 0 1%;
-    margin-bottom: 2.5%;
+    margin-bottom: 10%;
   }
-  body .page-two .card-container {
-    border-radius: 25px;
-    margin: 0 auto;
-    width: 85%;
-    height: 80%;
+  body .page-two .project-container {
+    display: none;
+  }
+  body .page-two .mobile-projects {
+    display: block;
+  }
+  body .page-two .mobile-projects .project {
+    text-align: center;
+    width: 75%;
+    height: 50%;
     background-color: rgba(0, 0, 0, 0.25);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin: 5% auto;
+    border-radius: 25px;
   }
-  body .page-two .card-container .card-row {
-    width: 90%;
-    height: 75%;
-    margin: 1.5% auto;
+  body .page-two .mobile-projects .project h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  body .page-two .card-container .card-row .card {
-    height: 100%;
-    width: 20%;
+    height: 50px;
     background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
+    color: #F1B24A;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 25px 25px 0 0;
+  }
+  body .page-two .mobile-projects .project img {
+    margin: 5% 0;
+    width: 75%;
+  }
+  body .page-two .mobile-projects .project p {
+    color: white;
   }
   body .page-three {
-    background: linear-gradient(120deg, #164A41, #4D774E);
+    background: linear-gradient(140deg, #164A41, #4D774E);
     height: 100vh;
   }
 }
