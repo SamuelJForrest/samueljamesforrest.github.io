@@ -87,7 +87,7 @@ body .page-one .navbar h1 {
   text-transform: uppercase;
   font-weight: bold;
   color: #FFFFFF;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 body .page-one .navbar .links {
@@ -161,6 +161,66 @@ body .page-one .navbar .links .contact-link {
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+body .page-one .twithub {
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 1%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  -webkit-animation: slide-in-out 5s forwards;
+          animation: slide-in-out 5s forwards;
+}
+
+@-webkit-keyframes slide-in-out {
+  0% {
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in-out {
+  0% {
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
+    opacity: 0;
   }
 }
 
@@ -287,13 +347,14 @@ body .page-one .slide-up {
 
 body .page-two {
   background: linear-gradient(60deg, #164A41, #4D774E);
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 body .page-two h2 {
   width: 50%;
   color: white;
-  font-size: 2.5em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: bold;
   padding: 1% 0 0 1%;
@@ -327,9 +388,9 @@ body .page-two .container .about-me-info {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -339,18 +400,45 @@ body .page-two .container .about-me-info span {
   color: #F1B24A;
 }
 
-body .page-two .container .about-me-info p {
+body .page-two .container .about-me-info .main-text {
   width: 90%;
-  font-size: 3.25rem;
+  font-size: 4.25rem;
   text-transform: uppercase;
   font-weight: bold;
-  margin: 2% 0;
+  margin: 3% 0;
+}
+
+body .page-two .container .about-me-info .other-text {
+  width: 50%;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 2%;
 }
 
 body .page-two .container .picture-and-contact {
   width: 40%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .page-two .container .picture-and-contact img {
+  height: 30%;
+  width: 40%;
+  border-radius: 50%;
 }
 
 body .page-three {
@@ -362,7 +450,7 @@ body .page-three {
 body .page-three h2 {
   width: 50%;
   color: white;
-  font-size: 2.5em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: bold;
   padding: 1% 0 0 1%;
