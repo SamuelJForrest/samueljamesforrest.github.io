@@ -1,3 +1,0 @@
-Features to add/To do:
-- Make site responsive
-- Add animation when site loads to signpost Twitter and Github bar
