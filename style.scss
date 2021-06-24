@@ -264,7 +264,7 @@ body {
 			justify-content: space-between;
 			align-items: center;
 			.about-me-info{
-				width: 55%;
+				width: 65%;
 				height: 100%;
 				color: white;
 				background-color: $opaque-black;
@@ -281,16 +281,43 @@ body {
 					text-transform: uppercase;
 					font-weight: bold;
 					margin: 3% 0;				}
-				.other-text {
-					width: 50%;
-					font-size: 1.25rem;
-					text-transform: uppercase;
+				.bio {
+					width: 90%;
+					font-size: 1.5rem;
 					font-weight: bold;
-					margin: 2%;
+					margin: 1% 0;
+					line-height: 1.2;
+				}
+				.current-skills {
+					height: 15%;
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					.skills-text {
+					width: 50%;
+					font-size: 2.75rem;
+					font-weight: bold;
+					margin: 5% auto;
+					text-align: center;
+					}
+					.skills {
+						width: 50%;
+						height: 20%;
+						display: flex;
+						justify-content: space-evenly;
+						align-items: center;
+						margin: 0 auto;
+						img {
+							height: 65px;
+							filter: brightness(0) invert(1);
+						}
+					}
 				}
 			}
 			.picture-and-contact {
-				width: 40%;
+				width: 30%;
 				height: 96%;
 				background-color: $opaque-black;
 				display: flex;
@@ -306,8 +333,8 @@ body {
 					text-transform: uppercase;
 				}
 				.profile-pic {
-					height: 27.5%;
-					width: 35%;
+					height: 250px;
+					width: 250px;
 					border-radius: 50%;
 				}
 				.email {
@@ -317,7 +344,7 @@ body {
 					justify-content: center;
 					align-items: center;
 					color: white;
-					font-size: 1.5rem;
+					font-size: 1.25rem;
 					text-transform: uppercase;
 					font-weight: bold;
 					img {
@@ -334,7 +361,7 @@ body {
 					justify-content: center;
 					align-items: center;
 					color: white;
-					font-size: 1.5rem;
+					font-size: 1.25rem;
 					text-transform: uppercase;
 					font-weight: bold;
 					transform: translateY(-100%);
@@ -441,11 +468,17 @@ body {
 				cursor: pointer;
 			}
 			.project-image {
-				background: url(./img/xps-8pb7Hq539Zw-unsplash.jpg);
-				background-size: cover;
+				// background: url('./img/Projects/To\ do\ list.png');
+				// background-size: cover;
 				width: 70%;
 				height: 100%;
 				border-radius: 25px 0 0 25px;
+				overflow: hidden;
+				img {
+					width: 130%;
+					height: 100%;
+					transform: translateX(-12%);
+				}
 			}
 			.project-info {
 				background-color: $opaque-black;
@@ -453,13 +486,15 @@ body {
 				height: 100%;
 				border-radius: 0 25px 25px 0;
 				.project-name {
+					display: flex;
+					justify-content: center;
+					align-items: center;
 					width: 80%;
 					height: 12.5%;
-					text-align: center;
 					margin: 5% auto 2.5% auto;
 					padding: 2%;
 					border-radius: 25px;
-					font-size: 3em;
+					font-size: 2.5em;
 					background-color: rgba(0,0,0,0.5);
 					color: $natural-yellow;
 				}

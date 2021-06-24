@@ -377,7 +377,7 @@ body .page-two .container {
 }
 
 body .page-two .container .about-me-info {
-  width: 55%;
+  width: 65%;
   height: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.25);
@@ -408,16 +408,63 @@ body .page-two .container .about-me-info .main-text {
   margin: 3% 0;
 }
 
-body .page-two .container .about-me-info .other-text {
-  width: 50%;
-  font-size: 1.25rem;
-  text-transform: uppercase;
+body .page-two .container .about-me-info .bio {
+  width: 90%;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin: 2%;
+  margin: 1% 0;
+  line-height: 1.2;
+}
+
+body .page-two .container .about-me-info .current-skills {
+  height: 15%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .page-two .container .about-me-info .current-skills .skills-text {
+  width: 50%;
+  font-size: 2.75rem;
+  font-weight: bold;
+  margin: 5% auto;
+  text-align: center;
+}
+
+body .page-two .container .about-me-info .current-skills .skills {
+  width: 50%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+body .page-two .container .about-me-info .current-skills .skills img {
+  height: 65px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 body .page-two .container .picture-and-contact {
-  width: 40%;
+  width: 30%;
   height: 96%;
   background-color: rgba(0, 0, 0, 0.25);
   display: -webkit-box;
@@ -444,8 +491,8 @@ body .page-two .container .picture-and-contact .contact {
 }
 
 body .page-two .container .picture-and-contact .profile-pic {
-  height: 27.5%;
-  width: 35%;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
 }
 
@@ -462,7 +509,7 @@ body .page-two .container .picture-and-contact .email {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -488,7 +535,7 @@ body .page-two .container .picture-and-contact .location {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: bold;
   -webkit-transform: translateY(-100%);
@@ -626,11 +673,17 @@ body .page-three .project-container .prev-btn:hover, body .page-three .project-c
 }
 
 body .page-three .project-container .project-image {
-  background: url(./img/xps-8pb7Hq539Zw-unsplash.jpg);
-  background-size: cover;
   width: 70%;
   height: 100%;
   border-radius: 25px 0 0 25px;
+  overflow: hidden;
+}
+
+body .page-three .project-container .project-image img {
+  width: 130%;
+  height: 100%;
+  -webkit-transform: translateX(-12%);
+          transform: translateX(-12%);
 }
 
 body .page-three .project-container .project-info {
@@ -641,13 +694,21 @@ body .page-three .project-container .project-info {
 }
 
 body .page-three .project-container .project-info .project-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80%;
   height: 12.5%;
-  text-align: center;
   margin: 5% auto 2.5% auto;
   padding: 2%;
   border-radius: 25px;
-  font-size: 3em;
+  font-size: 2.5em;
   background-color: rgba(0, 0, 0, 0.5);
   color: #F1B24A;
 }
