@@ -312,6 +312,7 @@ body {
 						img {
 							height: 65px;
 							filter: brightness(0) invert(1);
+							margin: 0 3%;
 						}
 					}
 				}
@@ -333,8 +334,8 @@ body {
 					text-transform: uppercase;
 				}
 				.profile-pic {
-					height: 250px;
-					width: 250px;
+					height: 200px;
+					width: 200px;
 					border-radius: 50%;
 				}
 				.email {
@@ -364,7 +365,7 @@ body {
 					font-size: 1.25rem;
 					text-transform: uppercase;
 					font-weight: bold;
-					transform: translateY(-100%);
+					transform: translateY(-125%);
 					img {
 						width: 30px;
 						height: 30px;
@@ -468,16 +469,14 @@ body {
 				cursor: pointer;
 			}
 			.project-image {
-				// background: url('./img/Projects/To\ do\ list.png');
-				// background-size: cover;
 				width: 70%;
 				height: 100%;
 				border-radius: 25px 0 0 25px;
 				overflow: hidden;
 				img {
-					width: 130%;
 					height: 100%;
-					transform: translateX(-12%);
+					width: 100%;
+					object-fit: cover;
 				}
 			}
 			.project-info {
@@ -523,11 +522,16 @@ body {
 					font-size: 1.5em;
 					text-transform: uppercase;
 					display: flex;
-					flex-direction: column;
-					align-items: flex-start;
+					justify-content: center;
+					align-items: center;
 					p {
 						color: white;
 						margin-bottom: 2.5%;
+					}
+					img {
+						filter: brightness(0) invert(1);
+						width: 20%;
+						margin: 0 5%;
 					}
 				}
 				.project-buttons {
@@ -537,6 +541,10 @@ body {
 					display: flex;
 					justify-content: center;
 					align-items: center;
+					a {
+						text-decoration: none;
+						color: white;
+					}
 					.view-live, .view-git{
 						background-color: rgba(0, 0, 0, 0.5);
 						color: white;
