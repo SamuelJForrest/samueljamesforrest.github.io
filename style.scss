@@ -283,7 +283,7 @@ body {
 					margin: 3% 0;				}
 				.bio {
 					width: 90%;
-					font-size: 1.5rem;
+					font-size: 1.6rem;
 					font-weight: bold;
 					margin: 1% 0;
 					line-height: 1.2;
@@ -439,8 +439,8 @@ body {
 			display: flex;
 			align-items: center;
 			.prev-btn {
-				height: 7.5%;
-				width: 3.75%;
+				height: 60px;
+				width: 60px;
 				background-color: transparent;
 				color: white;
 				font-weight: bold;
@@ -452,8 +452,8 @@ body {
 				transition: all 500ms ease;
 			}
 			.next-btn {
-				height: 7.5%;
-				width: 3.75%;
+				height: 60px;
+				width: 60px;
 				background-color: transparent;
 				color: white;
 				font-weight: bold;
@@ -493,21 +493,22 @@ body {
 					margin: 5% auto 2.5% auto;
 					padding: 2%;
 					border-radius: 25px;
-					font-size: 2.5em;
+					font-size: 3.2em;
 					background-color: rgba(0,0,0,0.5);
 					color: $natural-yellow;
 				}
 				.project-description {
 					display: flex;
+					justify-content: center;
 					align-items: center;
 					margin: 0 auto 2.5% auto;
-					padding: .5% 2%;
-					width: 80%;
+					padding: .5% 5%;
+					width: 73.5%;
 					height: 42.5%;
 					color: $white;
-					text-transform: uppercase;
 					font-weight: bold;
-					font-size: 1.15em;
+					font-size: 2em;
+					line-height: 1.2;
 					background-color: rgba(0,0,0,0.5);
 					border-radius: 25px;
 				}
@@ -620,7 +621,7 @@ body {
 	}
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 480px) {
 	html {
 		width: 100%;
 		overflow-x: hidden;
@@ -816,22 +817,173 @@ body {
 			.slide-up {
 				transform: translateY(0);		
 			}
+			.twithub {
+				display: none;
+			}
 		}
 		.page-two {
 			background: linear-gradient(60deg, $dark-green, $medium-green);
+			height: 200vh;
+			width: 100%;
+			h2 {
+				width: 50%;
+				color: white;
+				font-size: 2em;
+				text-transform: uppercase;
+				font-weight: bold;
+				padding: 1% 0 0 1%;
+				margin-bottom: 2.5%;
+			}
+			.container {
+				height: 85%;
+				width: 100%;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				.about-me-info{
+					width: 100%;
+					height: 100%;
+					color: white;
+					background-color: transparent;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: center;
+					span {
+						color: $natural-yellow;
+					}
+					.main-text {
+						width: 90%;
+						font-size: 3.25rem;
+						text-transform: uppercase;
+						font-weight: bold;
+						margin: 3% 0;				
+					}
+					.bio {
+						width: 90%;
+						font-size: 1.1rem;
+						font-weight: bold;
+						line-height: 1.2;
+					}
+					.current-skills {
+						height: 15%;
+						width: 80%;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						.skills-text {
+						width: 50%;
+						font-size: 1.75rem;
+						font-weight: bold;
+						text-align: center;
+						}
+						.skills {
+							width: 50%;
+							height: 20%;
+							display: flex;
+							justify-content: space-evenly;
+							align-items: center;
+							margin: 3% auto;
+							img {
+								height: 40px;
+								filter: brightness(0) invert(1);
+								margin: 0 3% 10% 3%;
+							}
+						}
+					}
+				}
+				.picture-and-contact {
+					width: 80%;
+					height: 70%;
+					background-color: $opaque-black;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					align-items: center;
+					padding-top: 2%;
+					margin-bottom: 5%;
+					.contact {
+						height: 6.5%;
+						font-size: 2rem;
+						color: white;
+						font-weight: bold;
+						text-transform: uppercase;
+					}
+					.profile-pic {
+						height: 200px;
+						width: 200px;
+						border-radius: 50%;
+					}
+					.location, .email {
+						display: none;
+					}
+					form {
+						width: 75%;
+						height: 40%;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						transform: translateY(-5%);
+						input {
+							border-radius: 5px;
+							border: none;
+							height: 30px;
+							width: 100%;
+							margin: 1% 0;
+						}
+						textarea {
+							border-radius: 5px;
+							border: none;
+							resize: none;
+							margin: 1% 0 2% 0;
+							width: 100%;
+						}
+						button {
+							margin: 1% 0;
+							width: 30%;
+							height: 15%;
+							background-color: $opaque-black;
+							border-radius: 5px;
+							color: $natural-yellow;
+							font-family: inherit;
+							font-weight: bold;
+							text-transform: uppercase;
+							font-size: 1.1rem;
+							border: 2px solid $natural-yellow;
+						}
+						button:hover {
+							background-color: black;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+		.page-three {
+			background: linear-gradient(130deg, $dark-green, $medium-green);
 			width: 100%;
 			height: 200vh;
 			h2 {
 				width: 50%;
 				color: white;
-				font-size: 2.5em;
+				font-size: 2em;
 				text-transform: uppercase;
 				font-weight: bold;
 				padding: 1% 0 0 1%;
-				margin-bottom: 10%;
+				margin-bottom: 2.5%;
 			}
 			.project-container {
+				border-radius: 25px;
+				margin: 0 auto;
+				width: 85%;
+				height: 80%;
+				background-color: $opaque-black;
 				display: none;
+				align-items: center;
 			}
 			.mobile-projects {
 				display: block;
@@ -856,17 +1008,37 @@ body {
 					}
 					img {
 						margin: 5% 0;
-						width: 75%;
+						width: 85%;
 					}
-					p {
+					.mobile-description {
+						width: 80%;
 						color: white;
+						font-weight: bold;
+						line-height: 1.25;
+						margin: 0 auto 15px auto;
+					}
+					.mobile-button {
+						margin: 1% 2% 7.5% 2%;
+						width: 35%;
+						height: 15%;
+						background-color: $opaque-black;
+						border-radius: 5px;
+						color: $natural-yellow;
+						font-family: inherit;
+						font-weight: bold;
+						text-transform: uppercase;
+						border: 2px solid $natural-yellow;
+						.mobile-view-live, .mobile-view-git {
+							text-decoration: none;
+							color: $natural-yellow;
+							font-family: inherit;
+							font-weight: bold;
+							font-size: 1.2rem;
+						}
 					}
 				}
 			}
 		}
-		.page-three {
-			background: linear-gradient(140deg, $dark-green, $medium-green);
-			height: 100vh;
-		}
 	}
 }
+

@@ -28,6 +28,8 @@ const projectTech = document.querySelector('.project-tech');
 const gitLink = document.querySelector('.git-link');
 const siteLink = document.querySelector('.site-link');
 
+const mobileContainer = document.querySelector('.mobile-projects');
+
 // Event listener to reveal navbar links
 
 burgerButton.addEventListener('click', () => {
@@ -88,6 +90,8 @@ prevBtn.addEventListener('click', () => {
     projectImg.src = projects[counter].image;
     projectName.textContent = projects[counter].name;
     projectDescription.textContent = projects[counter].description;
+    gitLink.href = projects[counter].gitlink;
+    siteLink.href = projects[counter].sitelink;
 
     if (projects[counter].languages.includes('HTML')){
         let htmlLogo = document.createElement('img');
@@ -119,7 +123,7 @@ prevBtn.addEventListener('click', () => {
 const projects = [
     {
         name: 'Calculator',
-        description: 'This is a calculator',
+        description: 'A sleek calculator that displays the calculation process step by step. This app also takes a range of key inputs for quick calculations.',
         languages: ['HTML', 'SCSS', 'JS'],
         image: './img/Projects/calculator app.png',
         sitelink: 'https://trusting-hypatia-918c3a.netlify.app/',
@@ -127,7 +131,7 @@ const projects = [
     },
     {
         name: 'Weather App',
-        description: 'This is a weather app',
+        description: 'A minimalist weather app that takes user input and returns information from OpenWeatherMap API or a simple error message.',
         languages: ['HTML', 'CSS', 'JS'],
         image: './img/Projects/Weather API app.png',
         sitelink: 'https://loving-galileo-ea6a7c.netlify.app/',
@@ -135,7 +139,7 @@ const projects = [
     },
     {
         name: 'To-Do list',
-        description: 'This is a to-do list',
+        description: 'A to-do list that allows you to filter items based on their completion status. This app also saves to-dos to local storage to revisit them later.',
         languages: ['HTML', 'SCSS', 'JS'],
         image: './img/Projects/To do list.png',
         sitelink: 'https://silly-murdock-31fb98.netlify.app/',
@@ -143,3 +147,49 @@ const projects = [
     }
 ];
 
+// Initialise project information on mobile projects
+
+for (let i = 0; i < projects.length; i++){
+    // Create a mobile project container (and it's elements), and assign class
+    let mobileProject = document.createElement('div');
+    mobileProject.classList.add('project');
+
+    let mobileTitle = document.createElement('h3');
+    mobileTitle.classList.add('mobile-title');
+    mobileTitle.textContent = projects[i].name;
+
+    let mobilePicture = document.createElement('img');
+    mobilePicture.classList.add('mobile-picture');
+    mobilePicture.src = projects[i].image;
+
+    let mobileDescription = document.createElement('p');
+    mobileDescription.classList.add('mobile-description');
+    mobileDescription.textContent = projects[i].description;
+
+    let mobileButtonLive = document.createElement('button');
+    mobileButtonLive.classList.add('mobile-button');
+    mobileButtonLive.innerHTML = `<a href="${projects[i].sitelink}" target="_blank" class="mobile-view-live">View Site</a>`;
+
+    let mobileButtonGit = document.createElement('button');
+    mobileButtonGit.classList.add('mobile-button');
+    mobileButtonGit.innerHTML = `<a href="${projects[i].gitlink}" target="_blank" class="mobile-view-git">View Code</a>`
+    
+
+    let liveBtnLink = document.createElement('a');
+    liveBtnLink.classList.add('mobile-view-live');
+    liveBtnLink.href = projects[i].sitelink;
+    liveBtnLink.target = '_blank';
+
+    let gitBtnLink = document.createElement('a');
+    gitBtnLink.classList.add('mobile-view-git');
+    gitBtnLink.href = projects[i].gitlink;
+    gitBtnLink.target = '_blank';
+
+
+    mobileButtonLive.append(liveBtnLink);
+    mobileButtonGit.append(gitBtnLink);
+    mobileProject.append(mobileTitle, mobilePicture, mobileDescription, mobileButtonLive, mobileButtonGit);
+    mobileContainer.append(mobileProject);
+
+
+}

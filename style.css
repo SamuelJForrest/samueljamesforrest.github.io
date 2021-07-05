@@ -410,7 +410,7 @@ body .page-two .container .about-me-info .main-text {
 
 body .page-two .container .about-me-info .bio {
   width: 90%;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   margin: 1% 0;
   line-height: 1.2;
@@ -639,8 +639,8 @@ body .page-three .project-container {
 }
 
 body .page-three .project-container .prev-btn {
-  height: 7.5%;
-  width: 3.75%;
+  height: 60px;
+  width: 60px;
   background-color: transparent;
   color: white;
   font-weight: bold;
@@ -654,8 +654,8 @@ body .page-three .project-container .prev-btn {
 }
 
 body .page-three .project-container .next-btn {
-  height: 7.5%;
-  width: 3.75%;
+  height: 60px;
+  width: 60px;
   background-color: transparent;
   color: white;
   font-weight: bold;
@@ -709,7 +709,7 @@ body .page-three .project-container .project-info .project-name {
   margin: 5% auto 2.5% auto;
   padding: 2%;
   border-radius: 25px;
-  font-size: 2.5em;
+  font-size: 3.2em;
   background-color: rgba(0, 0, 0, 0.5);
   color: #F1B24A;
 }
@@ -718,17 +718,20 @@ body .page-three .project-container .project-info .project-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto 2.5% auto;
-  padding: .5% 2%;
-  width: 80%;
+  padding: .5% 5%;
+  width: 73.5%;
   height: 42.5%;
   color: #FFFFFF;
-  text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.15em;
+  font-size: 2em;
+  line-height: 1.2;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 25px;
 }
@@ -906,7 +909,7 @@ body .page-three .mobile-projects {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 480px) {
   html {
     width: 100%;
     overflow-x: hidden;
@@ -1172,27 +1175,232 @@ body .page-three .mobile-projects {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+  body .page-one .twithub {
+    display: none;
+  }
   body .page-two {
     background: linear-gradient(60deg, #164A41, #4D774E);
-    width: 100%;
     height: 200vh;
+    width: 100%;
   }
   body .page-two h2 {
     width: 50%;
     color: white;
-    font-size: 2.5em;
+    font-size: 2em;
     text-transform: uppercase;
     font-weight: bold;
     padding: 1% 0 0 1%;
-    margin-bottom: 10%;
+    margin-bottom: 2.5%;
   }
-  body .page-two .project-container {
+  body .page-two .container {
+    height: 85%;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .page-two .container .about-me-info {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .page-two .container .about-me-info span {
+    color: #F1B24A;
+  }
+  body .page-two .container .about-me-info .main-text {
+    width: 90%;
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 3% 0;
+  }
+  body .page-two .container .about-me-info .bio {
+    width: 90%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  body .page-two .container .about-me-info .current-skills {
+    height: 15%;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .page-two .container .about-me-info .current-skills .skills-text {
+    width: 50%;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  body .page-two .container .about-me-info .current-skills .skills {
+    width: 50%;
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3% auto;
+  }
+  body .page-two .container .about-me-info .current-skills .skills img {
+    height: 40px;
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    margin: 0 3% 10% 3%;
+  }
+  body .page-two .container .picture-and-contact {
+    width: 80%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 2%;
+    margin-bottom: 5%;
+  }
+  body .page-two .container .picture-and-contact .contact {
+    height: 6.5%;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  body .page-two .container .picture-and-contact .profile-pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  body .page-two .container .picture-and-contact .location, body .page-two .container .picture-and-contact .email {
     display: none;
   }
-  body .page-two .mobile-projects {
+  body .page-two .container .picture-and-contact form {
+    width: 75%;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%);
+  }
+  body .page-two .container .picture-and-contact form input {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 100%;
+    margin: 1% 0;
+  }
+  body .page-two .container .picture-and-contact form textarea {
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    margin: 1% 0 2% 0;
+    width: 100%;
+  }
+  body .page-two .container .picture-and-contact form button {
+    margin: 1% 0;
+    width: 30%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #F1B24A;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border: 2px solid #F1B24A;
+  }
+  body .page-two .container .picture-and-contact form button:hover {
+    background-color: black;
+    cursor: pointer;
+  }
+  body .page-three {
+    background: linear-gradient(130deg, #164A41, #4D774E);
+    width: 100%;
+    height: 200vh;
+  }
+  body .page-three h2 {
+    width: 50%;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1% 0 0 1%;
+    margin-bottom: 2.5%;
+  }
+  body .page-three .project-container {
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 85%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .page-three .mobile-projects {
     display: block;
   }
-  body .page-two .mobile-projects .project {
+  body .page-three .mobile-projects .project {
     text-align: center;
     width: 75%;
     height: 50%;
@@ -1200,7 +1408,7 @@ body .page-three .mobile-projects {
     margin: 5% auto;
     border-radius: 25px;
   }
-  body .page-two .mobile-projects .project h3 {
+  body .page-three .mobile-projects .project h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1218,16 +1426,35 @@ body .page-three .mobile-projects {
     font-weight: bold;
     border-radius: 25px 25px 0 0;
   }
-  body .page-two .mobile-projects .project img {
+  body .page-three .mobile-projects .project img {
     margin: 5% 0;
-    width: 75%;
+    width: 85%;
   }
-  body .page-two .mobile-projects .project p {
+  body .page-three .mobile-projects .project .mobile-description {
+    width: 80%;
     color: white;
+    font-weight: bold;
+    line-height: 1.25;
+    margin: 0 auto 15px auto;
   }
-  body .page-three {
-    background: linear-gradient(140deg, #164A41, #4D774E);
-    height: 100vh;
+  body .page-three .mobile-projects .project .mobile-button {
+    margin: 1% 2% 7.5% 2%;
+    width: 35%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #F1B24A;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #F1B24A;
+  }
+  body .page-three .mobile-projects .project .mobile-button .mobile-view-live, body .page-three .mobile-projects .project .mobile-button .mobile-view-git {
+    text-decoration: none;
+    color: #F1B24A;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
