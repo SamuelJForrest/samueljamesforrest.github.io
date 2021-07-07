@@ -39,6 +39,27 @@ burgerButton.addEventListener('click', () => {
     lineThree.classList.toggle('line-three-rotate');
 });
 
+homeLink.addEventListener('click', () => {
+    topLinks.classList.toggle('show-nav');
+    lineOne.classList.toggle('line-one-rotate');
+    lineTwo.classList.toggle('line-two-remove');
+    lineThree.classList.toggle('line-three-rotate');
+});
+
+projectLink.addEventListener('click', () => {
+    topLinks.classList.toggle('show-nav');
+    lineOne.classList.toggle('line-one-rotate');
+    lineTwo.classList.toggle('line-two-remove');
+    lineThree.classList.toggle('line-three-rotate');
+});
+
+contactLink.addEventListener('click', () => {
+    topLinks.classList.toggle('show-nav');
+    lineOne.classList.toggle('line-one-rotate');
+    lineTwo.classList.toggle('line-two-remove');
+    lineThree.classList.toggle('line-three-rotate');
+});
+
 
 let counter = 0;
 
