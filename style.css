@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,8 +88,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -29,16 +106,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -86,7 +167,7 @@ body .page-one .navbar {
 body .page-one .navbar h1 {
   text-transform: uppercase;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 5vh;
 }
 
@@ -108,7 +189,7 @@ body .page-one .navbar .links a {
 }
 
 body .page-one .navbar .links a:hover {
-  color: #F1B24A;
+  color: #f1b24a;
   text-decoration: underline;
 }
 
@@ -233,14 +314,14 @@ body .page-one .info {
 
 body .page-one .info .main-info {
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 20vh;
   font-weight: bold;
 }
 
 body .page-one .info .main-info span {
-  color: #F1B24A;
+  color: #f1b24a;
 }
 
 body .page-one .small-info {
@@ -259,7 +340,7 @@ body .page-one .small-info {
   position: absolute;
   top: 10%;
   right: 2.5%;
-  color: #F1B24A;
+  color: #f1b24a;
   font-size: 6vh;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 50%;
@@ -345,7 +426,7 @@ body .page-one .slide-up {
 }
 
 body .page-two {
-  background: linear-gradient(60deg, #164A41, #4D774E);
+  background: linear-gradient(60deg, #164a41, #4d774e);
   min-height: 100vh;
   min-width: 100%;
 }
@@ -396,7 +477,7 @@ body .page-two .container .about-me-info {
 }
 
 body .page-two .container .about-me-info span {
-  color: #F1B24A;
+  color: #f1b24a;
 }
 
 body .page-two .container .about-me-info .main-text {
@@ -512,7 +593,7 @@ body .page-two .container .picture-and-contact .email {
 body .page-two .container .picture-and-contact .email img {
   width: 1.5vw;
   height: 3vh;
-  margin-right: .5vw;
+  margin-right: 0.5vw;
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
@@ -537,7 +618,7 @@ body .page-two .container .picture-and-contact .location {
 body .page-two .container .picture-and-contact .location img {
   width: 1.5vw;
   height: 3vh;
-  margin-right: .25vw;
+  margin-right: 0.25vw;
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
@@ -566,7 +647,7 @@ body .page-two .container .picture-and-contact form input {
   border: none;
   height: 3vh;
   width: 85%;
-  margin: .5vh 0;
+  margin: 0.5vh 0;
 }
 
 body .page-two .container .picture-and-contact form textarea {
@@ -584,12 +665,12 @@ body .page-two .container .picture-and-contact form button {
   height: 5vh;
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  color: #F1B24A;
+  color: #f1b24a;
   font-family: inherit;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 3vh;
-  border: 2px solid #F1B24A;
+  border: 2px solid #f1b24a;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
 }
@@ -600,7 +681,7 @@ body .page-two .container .picture-and-contact form button:hover {
 }
 
 body .page-three {
-  background: linear-gradient(120deg, #164A41, #4D774E);
+  background: linear-gradient(120deg, #164a41, #4d774e);
   min-width: 100%;
   min-height: 100vh;
 }
@@ -659,7 +740,8 @@ body .page-three .project-container .next-btn {
   transition: all 500ms ease;
 }
 
-body .page-three .project-container .prev-btn:hover, body .page-three .project-container .next-btn:hover {
+body .page-three .project-container .prev-btn:hover,
+body .page-three .project-container .next-btn:hover {
   background-color: rgba(0, 0, 0, 0.75);
   cursor: pointer;
 }
@@ -702,7 +784,7 @@ body .page-three .project-container .project-info .project-name {
   border-radius: 25px;
   font-size: 5.5vh;
   background-color: rgba(0, 0, 0, 0.5);
-  color: #F1B24A;
+  color: #f1b24a;
 }
 
 body .page-three .project-container .project-info .project-description {
@@ -716,10 +798,10 @@ body .page-three .project-container .project-info .project-description {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto 2vh auto;
-  padding: .5% 5%;
+  padding: 0.5% 5%;
   width: 73.5%;
   height: 35vh;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   font-size: 3.4vh;
   line-height: 3.9vh;
@@ -775,7 +857,8 @@ body .page-three .project-container .project-info .project-buttons a {
   color: white;
 }
 
-body .page-three .project-container .project-info .project-buttons .view-live, body .page-three .project-container .project-info .project-buttons .view-git {
+body .page-three .project-container .project-info .project-buttons .view-live,
+body .page-three .project-container .project-info .project-buttons .view-git {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   height: 100%;
@@ -783,7 +866,7 @@ body .page-three .project-container .project-info .project-buttons .view-live, b
   font-weight: bold;
   text-transform: uppercase;
   font-family: inherit;
-  margin: 0 .5vw;
+  margin: 0 0.5vw;
   border-radius: 15px;
   border: 2px solid white;
   padding: 10px 25px;
@@ -792,9 +875,10 @@ body .page-three .project-container .project-info .project-buttons .view-live, b
   transition: all 300ms ease;
 }
 
-body .page-three .project-container .project-info .project-buttons .view-live:hover, body .page-three .project-container .project-info .project-buttons .view-git:hover {
+body .page-three .project-container .project-info .project-buttons .view-live:hover,
+body .page-three .project-container .project-info .project-buttons .view-git:hover {
   background-color: rgba(0, 0, 0, 0.95);
-  color: #F1B24A;
+  color: #f1b24a;
   cursor: pointer;
 }
 
@@ -911,6 +995,8 @@ body .page-three .mobile-projects {
     min-width: 100%;
     background: url("./img/Website BG.png");
     background-size: cover;
+    background-repeat: none;
+    background-position: center;
   }
   body .page-one .navbar {
     -webkit-box-sizing: border-box;
@@ -929,30 +1015,30 @@ body .page-three .mobile-projects {
   body .page-one .navbar h1 {
     text-transform: uppercase;
     font-weight: bold;
-    color: #FFFFFF;
-    font-size: 3em;
+    color: #ffffff;
+    font-size: 3.25vw;
   }
   body .page-one .navbar .links {
-    width: 32.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    min-width: 35vw;
   }
   body .page-one .navbar .links a {
     display: inline-block;
     text-decoration: none;
+    text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1.5em;
-    padding: 2.5% 2.5%;
+    font-size: 1.5vw;
     color: black;
     border-radius: 10px;
-    -webkit-transition: background-color 500ms ease, color 100ms ease;
-    transition: background-color 500ms ease, color 100ms ease;
-  }
-  body .page-one .navbar .links a:hover {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: #F1B24A;
-    text-decoration: underline;
   }
   body .page-one .navbar .links .home-link {
+    padding: 0;
     -webkit-animation-name: linkDrop;
             animation-name: linkDrop;
     -webkit-animation-fill-mode: forwards;
@@ -963,6 +1049,7 @@ body .page-three .mobile-projects {
             transform: translateY(-110%);
   }
   body .page-one .navbar .links .project-link {
+    padding: 0;
     -webkit-animation-name: linkDrop;
             animation-name: linkDrop;
     -webkit-animation-fill-mode: forwards;
@@ -973,6 +1060,7 @@ body .page-three .mobile-projects {
             transform: translateY(-110%);
   }
   body .page-one .navbar .links .contact-link {
+    padding: 0;
     -webkit-animation-name: linkDrop;
             animation-name: linkDrop;
     -webkit-animation-fill-mode: forwards;
@@ -1056,21 +1144,21 @@ body .page-three .mobile-projects {
     }
   }
   body .page-one .info {
-    width: 50%;
+    width: 50vw;
     position: absolute;
-    top: 30%;
-    left: 1%;
+    top: 30vh;
+    left: 5vw;
     cursor: default;
   }
   body .page-one .info .main-info {
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
-    font-size: 8em;
+    font-size: calc(6vw + 6vh);
     font-weight: bold;
   }
   body .page-one .info .main-info span {
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-one .small-info {
     text-align: center;
@@ -1083,13 +1171,13 @@ body .page-three .mobile-projects {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 25%;
-    height: 45%;
+    width: calc(12.5vw + 12.5vh);
+    height: calc(12.5vw + 12.5vh);
     position: absolute;
     top: 10%;
     right: 2.5%;
-    color: #F1B24A;
-    font-size: 2.5em;
+    color: #f1b24a;
+    font-size: calc(2vw + 2vh);
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 50%;
     font-weight: bold;
@@ -1100,10 +1188,10 @@ body .page-three .mobile-projects {
     cursor: default;
   }
   body .page-one .socials {
-    -webkit-transform: translateY(110%);
-            transform: translateY(110%);
+    -webkit-transform: translateY(115%);
+            transform: translateY(115%);
     background-color: rgba(0, 0, 0, 0.75);
-    height: 10%;
+    height: 10vh;
     width: 15%;
     border-radius: 10px;
     position: fixed;
@@ -1121,7 +1209,7 @@ body .page-three .mobile-projects {
     transition: all 500ms ease;
   }
   body .page-one .socials .twitter {
-    height: 40px;
+    height: 7vh;
     -webkit-filter: grayscale(0) invert(1);
             filter: grayscale(0) invert(1);
     border: 1px solid transparent;
@@ -1166,23 +1254,22 @@ body .page-three .mobile-projects {
             transform: translateY(0);
   }
   body .page-two {
-    background: linear-gradient(62.5deg, #164A41, #4D774E);
-    height: 100%;
-    width: 100%;
-    border-radius: 10% 4% 100% 0% / 0% 100% 0% 100%;
+    background: linear-gradient(62.5deg, #164a41, #4d774e);
+    min-height: 100vh;
+    min-width: 100%;
   }
   body .page-two h2 {
     width: 50%;
     color: white;
-    font-size: 3em;
+    font-size: 3.25vw;
     text-transform: uppercase;
     font-weight: bold;
     padding: 1% 0 0 1%;
     margin-bottom: 2.5%;
   }
   body .page-two .container {
-    height: 80%;
-    width: 90%;
+    height: 80vh;
+    width: 90vw;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1195,8 +1282,8 @@ body .page-three .mobile-projects {
             align-items: center;
   }
   body .page-two .container .about-me-info {
-    width: 65%;
-    height: 100%;
+    width: 60vw;
+    height: 80vh;
     color: white;
     background-color: rgba(0, 0, 0, 0.25);
     display: -webkit-box;
@@ -1214,24 +1301,25 @@ body .page-three .mobile-projects {
             align-items: center;
   }
   body .page-two .container .about-me-info span {
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-two .container .about-me-info .main-text {
-    width: 90%;
-    font-size: 2.25rem;
+    font-size: 7vh;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 2% 0;
+    margin: 3% 0;
+    padding: 0 3vw;
   }
   body .page-two .container .about-me-info .bio {
-    width: 90%;
-    font-size: 1rem;
+    font-size: 2.5vh;
     font-weight: bold;
-    line-height: 1.1;
+    margin: 1% 0;
+    line-height: 1.2;
+    padding: 0 3vw;
   }
   body .page-two .container .about-me-info .current-skills {
-    height: 15%;
-    width: 100%;
+    height: 15vh;
+    width: 60vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1248,14 +1336,12 @@ body .page-three .mobile-projects {
   }
   body .page-two .container .about-me-info .current-skills .skills-text {
     width: 50%;
-    font-size: 1.5rem;
+    font-size: 5vh;
     font-weight: bold;
-    margin: 5% auto;
+    margin: 2.5vh auto;
     text-align: center;
   }
   body .page-two .container .about-me-info .current-skills .skills {
-    width: 50%;
-    height: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1268,14 +1354,14 @@ body .page-three .mobile-projects {
     margin: 0 auto;
   }
   body .page-two .container .about-me-info .current-skills .skills img {
-    height: 65px;
+    height: 7.5vh;
     -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1);
-    margin: 0 3%;
+    margin: 0 1vw;
   }
   body .page-two .container .picture-and-contact {
-    width: 30%;
-    height: 96%;
+    width: 27.5vw;
+    height: 80vh;
     background-color: rgba(0, 0, 0, 0.25);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1289,23 +1375,20 @@ body .page-three .mobile-projects {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 2%;
   }
   body .page-two .container .picture-and-contact .contact {
-    height: 10%;
-    font-size: 2.5rem;
+    padding: 1vh 0 0 0;
+    font-size: 6vh;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
   }
   body .page-two .container .picture-and-contact .profile-pic {
-    height: 125px;
-    width: 125px;
+    height: 20vh;
+    width: 10vw;
     border-radius: 50%;
   }
   body .page-two .container .picture-and-contact .email {
-    height: 2.5%;
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1316,20 +1399,18 @@ body .page-three .mobile-projects {
         -ms-flex-align: center;
             align-items: center;
     color: white;
-    font-size: .75rem;
+    font-size: 2vh;
     text-transform: uppercase;
     font-weight: bold;
   }
   body .page-two .container .picture-and-contact .email img {
-    width: 20px;
-    height: 20px;
-    margin-right: 2%;
+    width: 1.5vw;
+    height: 3vh;
+    margin-right: 0.5vw;
     -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1);
   }
   body .page-two .container .picture-and-contact .location {
-    height: 2%;
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1340,22 +1421,20 @@ body .page-three .mobile-projects {
         -ms-flex-align: center;
             align-items: center;
     color: white;
-    font-size: .75rem;
+    font-size: 2vh;
     text-transform: uppercase;
     font-weight: bold;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    margin-bottom: 2vh;
   }
   body .page-two .container .picture-and-contact .location img {
-    width: 20px;
-    height: 20px;
-    margin-right: 1%;
+    width: 1.5vw;
+    height: 3vh;
+    margin-right: 0.25vw;
     -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1);
   }
   body .page-two .container .picture-and-contact form {
     width: 75%;
-    height: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1375,29 +1454,30 @@ body .page-three .mobile-projects {
   body .page-two .container .picture-and-contact form input {
     border-radius: 5px;
     border: none;
-    height: 30px;
+    height: 3vh;
     width: 85%;
-    margin: 1% 0;
+    margin: 0.5vh 0;
   }
   body .page-two .container .picture-and-contact form textarea {
     border-radius: 5px;
     border: none;
     resize: none;
     margin: 1% 0 2% 0;
+    height: 25vh;
     width: 85%;
   }
   body .page-two .container .picture-and-contact form button {
     margin: 1% 0;
     width: 30%;
-    height: 15%;
+    height: 5vh;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: .8rem;
-    border: 2px solid #F1B24A;
+    font-size: 3vh;
+    border: 2px solid #f1b24a;
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
   }
@@ -1406,14 +1486,14 @@ body .page-three .mobile-projects {
     cursor: pointer;
   }
   body .page-three {
-    background: linear-gradient(120deg, #164A41, #4D774E);
-    width: 100%;
-    height: 100vh;
+    background: linear-gradient(120deg, #164a41, #4d774e);
+    min-width: 100%;
+    min-height: 100vh;
   }
   body .page-three h2 {
     width: 50%;
     color: white;
-    font-size: 3em;
+    font-size: 4vh;
     text-transform: uppercase;
     font-weight: bold;
     padding: 1% 0 0 1%;
@@ -1422,8 +1502,8 @@ body .page-three .mobile-projects {
   body .page-three .project-container {
     border-radius: 25px;
     margin: 0 auto;
-    width: 85%;
-    height: 75%;
+    width: 85vw;
+    height: 80vh;
     background-color: rgba(0, 0, 0, 0.25);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1433,40 +1513,59 @@ body .page-three .mobile-projects {
             align-items: center;
   }
   body .page-three .project-container .prev-btn {
-    height: 50px;
-    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: calc(2vh + 2vw);
+    width: calc(2vh + 2vw);
     background-color: transparent;
     color: white;
     font-weight: bold;
-    font-size: 2em;
+    font-size: calc(1vh + 1vw);
     border: 3px solid white;
     border-radius: 50%;
     position: absolute;
-    left: 2.5%;
+    left: 2.5vw;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   body .page-three .project-container .next-btn {
-    height: 50px;
-    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: calc(2vh + 2vw);
+    width: calc(2vh + 2vw);
     background-color: transparent;
     color: white;
     font-weight: bold;
-    font-size: 2em;
+    font-size: calc(1vh + 1vw);
     border: 3px solid white;
     border-radius: 50%;
     position: absolute;
-    right: 2.5%;
+    right: 2.5vw;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
-  body .page-three .project-container .prev-btn:hover, body .page-three .project-container .next-btn:hover {
+  body .page-three .project-container .prev-btn:hover,
+  body .page-three .project-container .next-btn:hover {
     background-color: rgba(0, 0, 0, 0.75);
     cursor: pointer;
   }
   body .page-three .project-container .project-image {
     width: 70%;
-    height: 100%;
+    height: 80vh;
     border-radius: 25px 0 0 25px;
     overflow: hidden;
   }
@@ -1479,7 +1578,7 @@ body .page-three .mobile-projects {
   body .page-three .project-container .project-info {
     background-color: rgba(0, 0, 0, 0.25);
     width: 30%;
-    height: 100%;
+    height: 80vh;
     border-radius: 0 25px 25px 0;
   }
   body .page-three .project-container .project-info .project-name {
@@ -1493,13 +1592,13 @@ body .page-three .mobile-projects {
         -ms-flex-align: center;
             align-items: center;
     width: 80%;
-    height: 12.5%;
-    margin: 5% auto 2.5% auto;
+    height: 10vh;
+    margin: 2vh auto 2vh auto;
     padding: 2%;
     border-radius: 25px;
-    font-size: 2em;
+    font-size: 5.5vh;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-three .project-container .project-info .project-description {
     display: -webkit-box;
@@ -1511,26 +1610,25 @@ body .page-three .mobile-projects {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 auto 2.5% auto;
-    padding: .5% 5%;
+    margin: 0 auto 2vh auto;
+    padding: 0.5% 5%;
     width: 73.5%;
-    height: 42.5%;
-    color: #FFFFFF;
+    height: 35vh;
+    color: #ffffff;
     font-weight: bold;
-    font-size: 1.3em;
-    line-height: 1.2;
+    font-size: 3.4vh;
+    line-height: 3.9vh;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
   }
   body .page-three .project-container .project-info .project-tech {
     background-color: rgba(0, 0, 0, 0.5);
     width: 80%;
-    height: 15%;
-    margin: 0 auto 2.5% auto;
+    height: 9vh;
+    margin: 0 auto 2vh auto;
     border-radius: 25px;
     padding: 2.5% 2%;
     font-weight: bold;
-    font-size: 1.5em;
     text-transform: uppercase;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1542,19 +1640,16 @@ body .page-three .mobile-projects {
         -ms-flex-align: center;
             align-items: center;
   }
-  body .page-three .project-container .project-info .project-tech p {
-    color: white;
-    margin-bottom: 2.5%;
-  }
   body .page-three .project-container .project-info .project-tech img {
     -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1);
-    width: 20%;
-    margin: 0 5%;
+    height: 8vh;
+    width: 4vw;
+    margin: 0 1vw;
   }
   body .page-three .project-container .project-info .project-buttons {
     width: 80%;
-    height: 10%;
+    height: 9vh;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1570,24 +1665,27 @@ body .page-three .mobile-projects {
     text-decoration: none;
     color: white;
   }
-  body .page-three .project-container .project-info .project-buttons .view-live, body .page-three .project-container .project-info .project-buttons .view-git {
+  body .page-three .project-container .project-info .project-buttons .view-live,
+  body .page-three .project-container .project-info .project-buttons .view-git {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     height: 100%;
+    width: 100%;
     font-weight: bold;
     text-transform: uppercase;
     font-family: inherit;
-    margin: 0 2.5%;
+    margin: 0 0.5vw;
     border-radius: 15px;
     border: 2px solid white;
     padding: 10px 25px;
-    font-size: .75em;
+    font-size: 2.3vh;
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
   }
-  body .page-three .project-container .project-info .project-buttons .view-live:hover, body .page-three .project-container .project-info .project-buttons .view-git:hover {
+  body .page-three .project-container .project-info .project-buttons .view-live:hover,
+  body .page-three .project-container .project-info .project-buttons .view-git:hover {
     background-color: rgba(0, 0, 0, 0.95);
-    color: #F1B24A;
+    color: #f1b24a;
     cursor: pointer;
   }
   body .page-three .mobile-projects {
@@ -1703,8 +1801,8 @@ body .page-three .mobile-projects {
   body .page-one {
     height: 100vh;
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#164A41), to(#4D774E));
-    background: linear-gradient(#164A41, #4D774E);
+    background: -webkit-gradient(linear, left top, left bottom, from(#164a41), to(#4d774e));
+    background: linear-gradient(#164a41, #4d774e);
   }
   body .page-one .navbar {
     width: 100%;
@@ -1731,7 +1829,7 @@ body .page-three .mobile-projects {
     margin: 2% 2%;
     text-transform: uppercase;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 2.75em;
   }
   body .page-one .navbar .burger-button {
@@ -1746,7 +1844,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
@@ -1757,7 +1855,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
@@ -1770,7 +1868,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
@@ -1806,7 +1904,7 @@ body .page-three .mobile-projects {
     font-size: 5em;
     -webkit-transform: translateX(-110%);
             transform: translateX(-110%);
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-one .navbar .links .home-link {
     -webkit-animation-name: linkSlider;
@@ -1891,13 +1989,13 @@ body .page-three .mobile-projects {
     cursor: default;
   }
   body .page-one .info .main-info {
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 6em;
     font-weight: bold;
   }
   body .page-one .info .main-info span {
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-one .small-info {
     position: inherit;
@@ -1913,7 +2011,7 @@ body .page-three .mobile-projects {
             align-items: center;
     width: 80%;
     height: 50vh;
-    color: #F1B24A;
+    color: #f1b24a;
     font-size: 2.75em;
     background-color: rgba(0, 0, 0, 0.75);
     font-weight: bold;
@@ -1958,7 +2056,7 @@ body .page-three .mobile-projects {
     display: none;
   }
   body .page-two {
-    background: linear-gradient(60deg, #164A41, #4D774E);
+    background: linear-gradient(60deg, #164a41, #4d774e);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -2012,7 +2110,7 @@ body .page-three .mobile-projects {
             align-items: center;
   }
   body .page-two .container .about-me-info span {
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-two .container .about-me-info .main-text {
     width: 90%;
@@ -2101,7 +2199,8 @@ body .page-three .mobile-projects {
     width: 200px;
     border-radius: 50%;
   }
-  body .page-two .container .picture-and-contact .location, body .page-two .container .picture-and-contact .email {
+  body .page-two .container .picture-and-contact .location,
+  body .page-two .container .picture-and-contact .email {
     display: none;
   }
   body .page-two .container .picture-and-contact form {
@@ -2141,19 +2240,19 @@ body .page-three .mobile-projects {
     height: 10%;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.1rem;
-    border: 2px solid #F1B24A;
+    border: 2px solid #f1b24a;
   }
   body .page-two .container .picture-and-contact form button:hover {
     background-color: black;
     cursor: pointer;
   }
   body .page-three {
-    background: linear-gradient(130deg, #164A41, #4D774E);
+    background: linear-gradient(130deg, #164a41, #4d774e);
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -2203,7 +2302,7 @@ body .page-three .mobile-projects {
             align-items: center;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.25);
-    color: #F1B24A;
+    color: #f1b24a;
     font-size: 2em;
     text-transform: uppercase;
     font-weight: bold;
@@ -2226,15 +2325,16 @@ body .page-three .mobile-projects {
     height: 15%;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     text-transform: uppercase;
-    border: 2px solid #F1B24A;
+    border: 2px solid #f1b24a;
   }
-  body .page-three .mobile-projects .project .mobile-button .mobile-view-live, body .page-three .mobile-projects .project .mobile-button .mobile-view-git {
+  body .page-three .mobile-projects .project .mobile-button .mobile-view-live,
+  body .page-three .mobile-projects .project .mobile-button .mobile-view-git {
     text-decoration: none;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     font-size: 1.2rem;
@@ -2257,8 +2357,8 @@ body .page-three .mobile-projects {
   body .page-one {
     height: 100vh;
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#164A41), to(#4D774E));
-    background: linear-gradient(#164A41, #4D774E);
+    background: -webkit-gradient(linear, left top, left bottom, from(#164a41), to(#4d774e));
+    background: linear-gradient(#164a41, #4d774e);
   }
   body .page-one .navbar {
     width: 100%;
@@ -2285,7 +2385,7 @@ body .page-three .mobile-projects {
     margin: 2% 2%;
     text-transform: uppercase;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 2.25em;
   }
   body .page-one .navbar .burger-button {
@@ -2300,7 +2400,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
@@ -2311,7 +2411,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
@@ -2324,7 +2424,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
@@ -2357,10 +2457,10 @@ body .page-three .mobile-projects {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 3.5em;
     -webkit-transform: translateX(-110%);
             transform: translateX(-110%);
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-one .navbar .links .home-link {
     -webkit-animation-name: linkSlider;
@@ -2445,13 +2545,13 @@ body .page-three .mobile-projects {
     cursor: default;
   }
   body .page-one .info .main-info {
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 300%;
     font-weight: bold;
   }
   body .page-one .info .main-info span {
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-one .small-info {
     position: inherit;
@@ -2467,7 +2567,7 @@ body .page-three .mobile-projects {
             align-items: center;
     width: 80%;
     height: 50vh;
-    color: #F1B24A;
+    color: #f1b24a;
     font-size: 2.75em;
     background-color: rgba(0, 0, 0, 0.75);
     font-weight: bold;
@@ -2512,7 +2612,7 @@ body .page-three .mobile-projects {
     display: none;
   }
   body .page-two {
-    background: linear-gradient(60deg, #164A41, #4D774E);
+    background: linear-gradient(60deg, #164a41, #4d774e);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -2565,7 +2665,7 @@ body .page-three .mobile-projects {
             align-items: center;
   }
   body .page-two .container .about-me-info span {
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-two .container .about-me-info .main-text {
     width: 90%;
@@ -2654,7 +2754,8 @@ body .page-three .mobile-projects {
     width: 200px;
     border-radius: 50%;
   }
-  body .page-two .container .picture-and-contact .location, body .page-two .container .picture-and-contact .email {
+  body .page-two .container .picture-and-contact .location,
+  body .page-two .container .picture-and-contact .email {
     display: none;
   }
   body .page-two .container .picture-and-contact form {
@@ -2694,19 +2795,19 @@ body .page-three .mobile-projects {
     height: 10%;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.1rem;
-    border: 2px solid #F1B24A;
+    border: 2px solid #f1b24a;
   }
   body .page-two .container .picture-and-contact form button:hover {
     background-color: black;
     cursor: pointer;
   }
   body .page-three {
-    background: linear-gradient(130deg, #164A41, #4D774E);
+    background: linear-gradient(130deg, #164a41, #4d774e);
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -2756,7 +2857,7 @@ body .page-three .mobile-projects {
             align-items: center;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.25);
-    color: #F1B24A;
+    color: #f1b24a;
     font-size: 2em;
     text-transform: uppercase;
     font-weight: bold;
@@ -2779,15 +2880,16 @@ body .page-three .mobile-projects {
     height: 15%;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     text-transform: uppercase;
-    border: 2px solid #F1B24A;
+    border: 2px solid #f1b24a;
   }
-  body .page-three .mobile-projects .project .mobile-button .mobile-view-live, body .page-three .mobile-projects .project .mobile-button .mobile-view-git {
+  body .page-three .mobile-projects .project .mobile-button .mobile-view-live,
+  body .page-three .mobile-projects .project .mobile-button .mobile-view-git {
     text-decoration: none;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     font-size: 1.2rem;
@@ -2810,8 +2912,8 @@ body .page-three .mobile-projects {
   body .page-one {
     height: 100vh;
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#164A41), to(#4D774E));
-    background: linear-gradient(#164A41, #4D774E);
+    background: -webkit-gradient(linear, left top, left bottom, from(#164a41), to(#4d774e));
+    background: linear-gradient(#164a41, #4d774e);
   }
   body .page-one .navbar {
     width: 100%;
@@ -2838,7 +2940,7 @@ body .page-three .mobile-projects {
     margin: 2% 2%;
     text-transform: uppercase;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 2em;
   }
   body .page-one .navbar .burger-button {
@@ -2853,7 +2955,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
@@ -2864,7 +2966,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
@@ -2877,7 +2979,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
@@ -2913,7 +3015,7 @@ body .page-three .mobile-projects {
     font-size: 2.5em;
     -webkit-transform: translateX(-110%);
             transform: translateX(-110%);
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-one .navbar .links .home-link {
     -webkit-animation-name: linkSlider;
@@ -3000,14 +3102,14 @@ body .page-three .mobile-projects {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 7.5vh;
     font-weight: bold;
     text-align: center;
   }
   body .page-one .info .main-info span {
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-one .small-info {
     position: inherit;
@@ -3023,7 +3125,7 @@ body .page-three .mobile-projects {
             align-items: center;
     width: 100%;
     height: 50vh;
-    color: #F1B24A;
+    color: #f1b24a;
     font-size: 2.2em;
     background-color: rgba(0, 0, 0, 0.75);
     font-weight: bold;
@@ -3068,7 +3170,7 @@ body .page-three .mobile-projects {
     display: none;
   }
   body .page-two {
-    background: linear-gradient(60deg, #164A41, #4D774E);
+    background: linear-gradient(60deg, #164a41, #4d774e);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -3121,7 +3223,7 @@ body .page-three .mobile-projects {
             align-items: center;
   }
   body .page-two .container .about-me-info span {
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-two .container .about-me-info .main-text {
     width: 90%;
@@ -3211,7 +3313,8 @@ body .page-three .mobile-projects {
     width: 200px;
     border-radius: 50%;
   }
-  body .page-two .container .picture-and-contact .location, body .page-two .container .picture-and-contact .email {
+  body .page-two .container .picture-and-contact .location,
+  body .page-two .container .picture-and-contact .email {
     display: none;
   }
   body .page-two .container .picture-and-contact form {
@@ -3253,19 +3356,19 @@ body .page-three .mobile-projects {
     height: 15%;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.1rem;
-    border: 2px solid #F1B24A;
+    border: 2px solid #f1b24a;
   }
   body .page-two .container .picture-and-contact form button:hover {
     background-color: black;
     cursor: pointer;
   }
   body .page-three {
-    background: linear-gradient(130deg, #164A41, #4D774E);
+    background: linear-gradient(130deg, #164a41, #4d774e);
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -3315,7 +3418,7 @@ body .page-three .mobile-projects {
             align-items: center;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.25);
-    color: #F1B24A;
+    color: #f1b24a;
     font-size: 1.75em;
     text-transform: uppercase;
     font-weight: bold;
@@ -3335,21 +3438,31 @@ body .page-three .mobile-projects {
   body .page-three .mobile-projects .project .mobile-button {
     margin: 1% 2% 7.5% 2%;
     width: 35%;
-    height: 15%;
+    min-height: 15%;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     text-transform: uppercase;
-    border: 2px solid #F1B24A;
+    border: 2px solid #f1b24a;
   }
-  body .page-three .mobile-projects .project .mobile-button .mobile-view-live, body .page-three .mobile-projects .project .mobile-button .mobile-view-git {
+  body .page-three .mobile-projects .project .mobile-button .mobile-view-live,
+  body .page-three .mobile-projects .project .mobile-button .mobile-view-git {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 3.5vw;
   }
 }
 
@@ -3369,8 +3482,8 @@ body .page-three .mobile-projects {
   body .page-one {
     height: 100vh;
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#164A41), to(#4D774E));
-    background: linear-gradient(#164A41, #4D774E);
+    background: -webkit-gradient(linear, left top, left bottom, from(#164a41), to(#4d774e));
+    background: linear-gradient(#164a41, #4d774e);
   }
   body .page-one .navbar {
     width: 100%;
@@ -3397,7 +3510,7 @@ body .page-three .mobile-projects {
     margin: 2% 2%;
     text-transform: uppercase;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 1.5em;
   }
   body .page-one .navbar .burger-button {
@@ -3412,7 +3525,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
@@ -3423,7 +3536,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
@@ -3436,7 +3549,7 @@ body .page-three .mobile-projects {
     right: 10%;
     width: 30px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 5px 0;
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
@@ -3472,7 +3585,7 @@ body .page-three .mobile-projects {
     font-size: 2.5em;
     -webkit-transform: translateX(-110%);
             transform: translateX(-110%);
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-one .navbar .links .home-link {
     -webkit-animation-name: linkSlider;
@@ -3557,13 +3670,13 @@ body .page-three .mobile-projects {
   }
   body .page-one .info .main-info {
     width: 85%;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 3em;
     font-weight: bold;
   }
   body .page-one .info .main-info span {
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-one .small-info {
     position: inherit;
@@ -3579,7 +3692,7 @@ body .page-three .mobile-projects {
             align-items: center;
     width: 100%;
     height: 50vh;
-    color: #F1B24A;
+    color: #f1b24a;
     font-size: 2.2em;
     background-color: rgba(0, 0, 0, 0.75);
     font-weight: bold;
@@ -3624,7 +3737,7 @@ body .page-three .mobile-projects {
     display: none;
   }
   body .page-two {
-    background: linear-gradient(60deg, #164A41, #4D774E);
+    background: linear-gradient(60deg, #164a41, #4d774e);
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -3677,7 +3790,7 @@ body .page-three .mobile-projects {
             align-items: center;
   }
   body .page-two .container .about-me-info span {
-    color: #F1B24A;
+    color: #f1b24a;
   }
   body .page-two .container .about-me-info .main-text {
     width: 90%;
@@ -3767,7 +3880,8 @@ body .page-three .mobile-projects {
     width: 200px;
     border-radius: 50%;
   }
-  body .page-two .container .picture-and-contact .location, body .page-two .container .picture-and-contact .email {
+  body .page-two .container .picture-and-contact .location,
+  body .page-two .container .picture-and-contact .email {
     display: none;
   }
   body .page-two .container .picture-and-contact form {
@@ -3809,19 +3923,19 @@ body .page-three .mobile-projects {
     height: 15%;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: .85rem;
-    border: 2px solid #F1B24A;
+    font-size: 0.85rem;
+    border: 2px solid #f1b24a;
   }
   body .page-two .container .picture-and-contact form button:hover {
     background-color: black;
     cursor: pointer;
   }
   body .page-three {
-    background: linear-gradient(130deg, #164A41, #4D774E);
+    background: linear-gradient(130deg, #164a41, #4d774e);
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -3871,7 +3985,7 @@ body .page-three .mobile-projects {
             align-items: center;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.25);
-    color: #F1B24A;
+    color: #f1b24a;
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
@@ -3894,15 +4008,16 @@ body .page-three .mobile-projects {
     height: 10%;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     text-transform: uppercase;
-    border: 2px solid #F1B24A;
+    border: 2px solid #f1b24a;
   }
-  body .page-three .mobile-projects .project .mobile-button .mobile-view-live, body .page-three .mobile-projects .project .mobile-button .mobile-view-git {
+  body .page-three .mobile-projects .project .mobile-button .mobile-view-live,
+  body .page-three .mobile-projects .project .mobile-button .mobile-view-git {
     text-decoration: none;
-    color: #F1B24A;
+    color: #f1b24a;
     font-family: inherit;
     font-weight: bold;
     font-size: 1rem;
